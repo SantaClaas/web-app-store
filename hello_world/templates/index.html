@@ -7,20 +7,19 @@
 <head>
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{% static 'main.css' %}">
+    <!-- Using play CDN of tailwindcss to quickly prototype. Do not use in production. -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{% static 'Octocat.png' %}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Django
-            </p>
-            <p class="small">
-                Edit <code>hello_world/templates/index.html</code> and see changes live!
-            </p>
-        </header>
-    </div>
+<main>
+    <form>
+        <label for="manifest-url">Manifest Url</label>
+        <input id="manifest-url" type="url" name="manifest-url">
+        <button type="submit">Submit</button>
+    </form>
+</main>
+   
 </body>
 
 </html>
